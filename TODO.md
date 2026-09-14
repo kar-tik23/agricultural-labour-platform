@@ -1,26 +1,73 @@
 # TODO
 
 ## Project Setup
-- [ ] Initialize Flutter application
-- [ ] Initialize Spring Boot backend
-- [ ] Set up MySQL
+- [x] Create project structure
+- [x] Initialize Git repository
+- [x] Create GitHub repository
+- [x] Push initial project
+- [x] Initialize Flutter application
 
-## Core Features
-- [ ] Authentication
+## Flutter Foundation
+- [x] Create basic Flutter architecture
+- [x] Create Role Selection screen
+- [x] Create Farmer mobile-number screen
+- [x] Create Farmer OTP UI
+
+## Authentication
+- [ ] Decide OTP provider
+- [ ] Decide session/token strategy
+- [ ] Implement backend authentication
+- [ ] Connect Flutter authentication UI
+- [ ] Implement OTP expiration
+- [ ] Implement OTP attempt limits
+
+## Farmer Flow
 - [ ] Farmer profile
-- [ ] Service provider profile
-- [ ] Crop catalogue
-- [ ] Skill catalogue
-- [ ] Availability
-- [ ] Location
+- [ ] Farmer home
+- [ ] Find Labour
+- [ ] Crop selection
+- [ ] Required work/skill selection
+- [ ] GPS location
 - [ ] Matching
-- [ ] Worker/provider results
+- [ ] Worker results
+- [ ] Worker profile
 - [ ] Direct calling
-- [ ] Admin path
+
+## Service Provider Flow
+- [ ] Provider type selection
+- [ ] Provider profile
+- [ ] Crop selection
+- [ ] Skill selection
+- [ ] Expected pay
+- [ ] Location
+- [ ] Availability
+- [ ] Provider home
+
+## Backend
+- [ ] Initialize Spring Boot
+- [ ] Configure REST API
+- [ ] Implement authentication
+- [ ] Implement user management
+- [ ] Implement farmer management
+- [ ] Implement service provider management
+- [ ] Implement crop catalogue
+- [ ] Implement skill catalogue
+- [ ] Implement availability
+- [ ] Implement matching
+- [ ] Implement admin path
+
+## Database
+- [ ] Set up MySQL
+- [ ] Design schema
+- [ ] Create migrations/schema scripts
+- [ ] Seed crop catalogue
+- [ ] Seed skill catalogue
+- [ ] Define crop-skill relationships
 
 ## Verification
+- [x] Flutter analyze
+- [x] Flutter tests
 - [ ] Backend tests
-- [ ] Flutter checks
 - [ ] API integration testing
 - [ ] Runtime verification
 
@@ -29,3 +76,5 @@
 - [ ] Backend deployment
 - [ ] Database deployment
 - [ ] Mobile build
+- [ ] Monitoring
+- [ ] Backup
