@@ -1,0 +1,26 @@
+# Flutter
+mobile/.dart_tool/
+mobile/.idea/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+
+# Android
+mobile/android/.gradle/
+mobile/android/local.properties
+
+# Spring Boot
+backend/target/
+
+# Environment / secrets
+.env
+*.env
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
