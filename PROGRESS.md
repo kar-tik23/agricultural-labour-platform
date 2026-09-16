@@ -14,23 +14,24 @@ Flutter frontend foundation and initial Farmer flow.
 | Project structure | IMPLEMENTED |
 | GitHub repository | IMPLEMENTED |
 | Flutter application | IMPLEMENTED |
+| Flutter Android environment | VERIFIED |
 | Role Selection | IMPLEMENTED |
 | Farmer mobile number UI | IMPLEMENTED |
 | Farmer OTP UI | IMPLEMENTED |
+| Farmer Profile UI | IMPLEMENTED |
+| Farmer Home | IMPLEMENTED |
+| Crop Selection UI | IMPLEMENTED |
+| Crop-specific Skill Selection UI | IMPLEMENTED |
+| Android UI runtime check | VERIFIED |
 | Real authentication | PLANNED |
 | Authentication provider | TBD |
 | Session/token strategy | TBD |
-| Farmer profile | PLANNED |
-| Farmer home | PLANNED |
-| Farmer labour search | PLANNED |
-| Service provider flow | PLANNED |
-| Crop catalogue | PLANNED |
-| Skill catalogue | PLANNED |
-| Availability | PLANNED |
-| Location | PLANNED |
+| Farmer labour search backend | PLANNED |
+| Location/GPS | PLANNED |
 | Matching | PLANNED |
 | Worker/provider results | PLANNED |
 | Direct calling | PLANNED |
+| Service provider flow | PLANNED |
 | Admin | PLANNED |
 | Spring Boot backend | PLANNED |
 | MySQL database | PLANNED |
@@ -41,19 +42,31 @@ Role Selection
 → Farmer
 → Mobile Number
 → OTP Verification UI
+→ Farmer Profile
+→ Farmer Home
+→ Find Labour
+→ Crop Selection
+→ Crop-specific Skill Selection
 
 ## Verification
 
 - Flutter environment verified.
+- Android toolchain verified.
+- Android emulator detected and connected.
 - Flutter application created successfully.
 - Flutter application runs successfully.
 - `flutter analyze` passes.
 - `flutter test` passes.
-- Role Selection screen implemented.
-- Farmer mobile-number screen implemented.
-- Farmer OTP screen implemented.
+- Application launched successfully on Android emulator.
+- Farmer flow was checked on Android emulator.
+- Crop and skill selection was checked on Android emulator.
 
 ## Notes
 
-Real authentication has not been implemented yet because the OTP provider and
-session/token strategy are still TBD.
+Real authentication has not been implemented.
+
+OTP provider and session/token strategy remain TBD.
+
+The crop and skill catalogue currently used by the Flutter UI is temporary
+frontend data. The final catalogue will be data-driven through the backend
+and database.

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'farmer_profile_screen.dart';
 class FarmerAuthScreen extends StatefulWidget {
   final String mobileNumber;
 
@@ -22,20 +22,26 @@ class _FarmerAuthScreenState extends State<FarmerAuthScreen> {
   }
 
   void _verifyOtp() {
-    final otp = _otpController.text.trim();
+  final otp = _otpController.text.trim();
 
-    if (otp.length != 6) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please enter a valid 6-digit OTP.'),
-        ),
-      );
-      return;
-    }
-
-    // Real OTP verification will be connected
-    // after the backend authentication strategy is decided.
+  if (otp.length != 6) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Please enter a valid 6-digit OTP.'),
+      ),
+    );
+    return;
   }
+
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => FarmerProfileScreen(
+        mobileNumber: widget.mobileNumber,
+      ),
+    ),
+  );
+}
 
   @override
   Widget build(BuildContext context) {

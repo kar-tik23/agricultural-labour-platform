@@ -6,12 +6,18 @@
 - [x] Create GitHub repository
 - [x] Push initial project
 - [x] Initialize Flutter application
+- [x] Verify Android development environment
 
 ## Flutter Foundation
 - [x] Create basic Flutter architecture
 - [x] Create Role Selection screen
 - [x] Create Farmer mobile-number screen
 - [x] Create Farmer OTP UI
+- [x] Create Farmer Profile screen
+- [x] Create Farmer Home screen
+- [x] Create Crop Selection UI
+- [x] Create crop-specific Skill Selection UI
+- [x] Verify current UI on Android emulator
 
 ## Authentication
 - [ ] Decide OTP provider
@@ -22,11 +28,11 @@
 - [ ] Implement OTP attempt limits
 
 ## Farmer Flow
-- [ ] Farmer profile
-- [ ] Farmer home
-- [ ] Find Labour
-- [ ] Crop selection
-- [ ] Required work/skill selection
+- [x] Farmer profile UI
+- [x] Farmer home UI
+- [x] Find Labour entry point
+- [x] Crop selection UI
+- [x] Required work/skill selection UI
 - [ ] GPS location
 - [ ] Matching
 - [ ] Worker results
@@ -67,9 +73,10 @@
 ## Verification
 - [x] Flutter analyze
 - [x] Flutter tests
+- [x] Android emulator runtime check
 - [ ] Backend tests
 - [ ] API integration testing
-- [ ] Runtime verification
+- [ ] Full runtime verification
 
 ## Deployment
 - [ ] Production configuration
