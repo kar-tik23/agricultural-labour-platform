@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'farmer_mobile_screen.dart';
+import 'service_provider_mobile_screen.dart';
 class RoleSelectionScreen extends StatelessWidget {
   const RoleSelectionScreen({super.key});
 
@@ -60,7 +61,12 @@ class RoleSelectionScreen extends StatelessWidget {
 
               OutlinedButton(
                 onPressed: () {
-                  // Service Provider flow will be added next.
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const ServiceProviderMobileScreen(),
+                      ),
+                    );
                 },
                 child: const Padding(
                   padding: EdgeInsets.all(16),

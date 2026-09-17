@@ -1,6 +1,7 @@
 # TODO
 
 ## Project Setup
+
 - [x] Create project structure
 - [x] Initialize Git repository
 - [x] Create GitHub repository
@@ -9,6 +10,7 @@
 - [x] Verify Android development environment
 
 ## Flutter Foundation
+
 - [x] Create basic Flutter architecture
 - [x] Create Role Selection screen
 - [x] Create Farmer mobile-number screen
@@ -20,6 +22,7 @@
 - [x] Verify current UI on Android emulator
 
 ## Authentication
+
 - [ ] Decide OTP provider
 - [ ] Decide session/token strategy
 - [ ] Implement backend authentication
@@ -28,28 +31,35 @@
 - [ ] Implement OTP attempt limits
 
 ## Farmer Flow
+
 - [x] Farmer profile UI
 - [x] Farmer home UI
 - [x] Find Labour entry point
 - [x] Crop selection UI
 - [x] Required work/skill selection UI
-- [ ] GPS location
+- [x] GPS location detection
+- [ ] Connect location to backend
 - [ ] Matching
 - [ ] Worker results
 - [ ] Worker profile
 - [ ] Direct calling
 
 ## Service Provider Flow
-- [ ] Provider type selection
-- [ ] Provider profile
-- [ ] Crop selection
-- [ ] Skill selection
+
+- [x] Provider mobile-number screen
+- [x] Provider type selection
+- [x] Provider profile
+- [x] Crop selection
+- [x] Skill selection
+- [ ] Fix selected-crop → skill state/data passing
+- [ ] Complete approved crop-skill catalogue
 - [ ] Expected pay
 - [ ] Location
 - [ ] Availability
 - [ ] Provider home
 
 ## Backend
+
 - [ ] Initialize Spring Boot
 - [ ] Configure REST API
 - [ ] Implement authentication
@@ -58,27 +68,39 @@
 - [ ] Implement service provider management
 - [ ] Implement crop catalogue
 - [ ] Implement skill catalogue
+- [ ] Implement crop-skill relationships
 - [ ] Implement availability
+- [ ] Implement location handling
 - [ ] Implement matching
 - [ ] Implement admin path
 
 ## Database
+
 - [ ] Set up MySQL
 - [ ] Design schema
 - [ ] Create migrations/schema scripts
 - [ ] Seed crop catalogue
 - [ ] Seed skill catalogue
 - [ ] Define crop-skill relationships
+- [ ] Define farmer data
+- [ ] Define service provider data
+- [ ] Define availability data
+- [ ] Define location data
 
 ## Verification
+
 - [x] Flutter analyze
 - [x] Flutter tests
 - [x] Android emulator runtime check
 - [ ] Backend tests
 - [ ] API integration testing
+- [ ] Authentication testing
+- [ ] Location permission/error testing
+- [ ] Matching verification
 - [ ] Full runtime verification
 
 ## Deployment
+
 - [ ] Production configuration
 - [ ] Backend deployment
 - [ ] Database deployment

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'location_screen.dart';
 import '../models/crop.dart';
 import '../models/skill.dart';
 import '../services/catalogue_service.dart';
@@ -40,7 +40,12 @@ class _LabourSearchScreenState extends State<LabourSearchScreen> {
       return;
     }
 
-    // Location and matching will be connected next.
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const LocationScreen(),
+      ),
+    );
   }
 
   @override

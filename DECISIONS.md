@@ -1,3 +1,5 @@
+# Project Decisions
+
 ## DEC-004 — Android Emulator for UI Verification
 
 **Status:** IMPLEMENTED
@@ -44,3 +46,32 @@ The catalogue will be moved to a data-driven backend/database implementation.
 ### Important
 
 The local catalogue must not be treated as the final database schema.
+
+---
+
+## DEC-006 — Geolocator for GPS Location
+
+**Status:** IMPLEMENTED
+
+### Decision
+
+The Flutter application will use the Geolocator package for GPS location
+detection.
+
+### Reason
+
+The Farmer flow requires the user's geographic location for nearby labour
+discovery.
+
+### Current Implementation
+
+GPS location detection has been implemented in the Flutter application and
+verified on the Android emulator.
+
+### Notes
+
+Location storage, search radius, distance calculation, update frequency and
+backend integration remain TBD.
+
+The Geolocator dependency version was adjusted during Android build
+compatibility troubleshooting.
